@@ -1,6 +1,6 @@
-#return 0; wp
-##pwn
-###1. Password_checker
+#return 0; wp  
+##pwn  
+###1. Password_checker  
 ![](https://i.imgur.com/JwjIu9J.png)  
 
 ![](https://i.imgur.com/AO4VZzy.png)
@@ -17,7 +17,7 @@ p.interactive()
 ```
 然后在出来的文件系统中找到home/ctf/flag文件即可获得flag
 
-###2. overflow
+###2. overflow  
 ![](https://i.imgur.com/Td3r3LN.jpg)
 下载文件之后  
 直接拖进ida
@@ -38,8 +38,8 @@ p.sendline('a'*(0xFFC511CC-0xFFC511AC)+p32(anser)+'b'*(0xFFC511DC-0xFFC511CC-4)+
 
 p.interactive()
 ```
-##rev
-###middle
+##rev  
+###middle  
 ```python
 #!/usr/bin/env python
 # coding=utf-8
@@ -111,7 +111,7 @@ if __name__ == "__main__":
 用CAXA编程助手打开即得到flag
 ![](https://i.imgur.com/5NMqPxc.png)
 
-###rev
+###rev  
 ```python
 enc_flag = '86la1l52l9fl93l9dl97l52l9bla6l52l9fla1la4l97l52l96l9bl98l98l9bl95la7l9ela6l52la6la1l52l95l93l9el95la7l9el93la6l97l52la6l9al97l52l98l9el93l99l52l94labl52l9al93la0l96l5el52la0la7l93l93l95la6l98ladla2labl91la7la0l95la1l9fla2labl9el97lafl5el52l98l9el93l99l52l9bla5l52l98la1la4l52la5l95la4l9bla2la6la5l'
 enc_flag=enc_flag.replace('l','')
@@ -124,9 +124,9 @@ for k in b:
 
 
 
-##Web
-###令人怀念的南邮综合题（确确实实是做出来了那种感觉）
-![](http://thyrsi.com/t6/639/1545616214x2728278644.png)
+##Web  
+###令人怀念的南邮综合题（确确实实是做出来了那种感觉）  
+![](http://thyrsi.com/t6/639/1545616214x2728278644.png)  
 
 先wascan扫一遍后台（抱歉咯）XD
 发现存在一个www.zip的文件，下载以后打开发现是几个源码
@@ -154,10 +154,10 @@ for($i=100000;$i++;$i<=1000000){
 最后登录admin拿到flag
 
 
-##Re
-###车万狗的基本素养
+##Re  
+###车万狗的基本素养  
 
-####这道题真的不是misc吗？
+####这道题真的不是misc吗？  
 
 ————————————————————————————————————————————————
 
